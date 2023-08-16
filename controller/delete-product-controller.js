@@ -1,4 +1,4 @@
-import {productServices} from "../serivicos/product-services.js";
+import {productServices} from "./serivicos/product-services.js";
 const formulario = document.querySelector("[data-form]");
 
 const obtenerInfo = async () => {
@@ -43,7 +43,7 @@ formulario.addEventListener("submit", async (e) => {
     e.preventDefault();
 try {
     const respuesta = await productServices.eliminarProducto(id);
-    window.location.href="../screens/productos.html"; 
+    window.location.href="./screens/productos.html"; 
     if(!respuesta.ok) {
     throw new Error("Error al eliminar"); 
     }

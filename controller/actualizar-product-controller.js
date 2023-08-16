@@ -1,4 +1,4 @@
-import {productServices} from "../serivicos/product-services.js";
+import {productServices} from "./serivicos/product-services.js";
 const formulario = document.querySelector("[data-form]");
 
 const obtenerInfo = async () => {
@@ -40,7 +40,7 @@ formulario.addEventListener("submit", async (e) => {
     const descripcion =document.querySelector("[data-descripcion]").value;
     try {
     await productServices.actualizarproducto(imageurl,name,price,descripcion,id);
-    window.location.href="../screens/productos.html"; 
+    window.location.href="./screens/productos.html"; 
     } catch(error) {
     alert("Ocurrió un error");
     }

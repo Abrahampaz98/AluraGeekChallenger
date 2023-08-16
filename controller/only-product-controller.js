@@ -1,4 +1,4 @@
-import { productServices } from "../serivicos/product-services.js";
+import { productServices } from "./serivicos/product-services.js";
 
 function obtenerIdProducto() {
     const urlActual = window.location.href;
