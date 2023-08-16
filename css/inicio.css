@@ -1,0 +1,106 @@
+.banner{
+    height:21em;
+    background-image: url("../img/banner-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner__letras{
+    position: relative;
+    top:10em;
+    padding-left: 2em;
+}
+.banner__letras__titulo{
+    color:var(--color-blanco);
+    font-size: 3em;
+    font-family:var(--tipo-letra);
+    font-weight: 700;
+    line-height: 61px;
+}
+.banner__letras__p{
+    color: var(--color-blanco);
+    padding: 1em 0;
+    font-family:var(--tipo-letra);
+    font-weight: 700;
+}
+.banner__letras__button{
+    border: none;
+    background-color:var(--color-azul);
+    color: var(--color-blanco);
+    padding: 1em;
+    cursor: pointer;
+}
+.titulo__producto{
+    font-family: var(--tipo-letra);
+    padding: 1em;
+    font-size: 1.5em;
+}
+.seccion__producto{
+    display: flex;
+    justify-content: center;
+}
+.producto{
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    width:150px;
+    border-radius: 0.5em;
+    border: 1px solid var(--color-azul);
+    box-sizing: content-box;
+}
+.producto>img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.producto__img{
+    width: 10em;
+    height:10em;
+    object-fit: contain;
+}
+.producto__nombre{
+font-family: var(--tipo-letra);
+white-space: nowrap; 
+max-height: 100px;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.producto__precio{
+font-family: var(--tipo-letra);
+padding-bottom: 0.5em;
+}
+@media (max-width: 860px) {
+
+    .banner {
+    height: 20em;
+    }
+    .banner__letras {
+    top:10em;
+    padding-left:0.5em; 
+    }
+    .banner__letras__titulo {
+    font-size: 1em;
+    }
+    
+    .banner__letras__p {
+    font-size: 0.7em;
+    }
+    .seccion__producto {
+    flex-direction: column;
+    align-items: center;
+    }
+    .producto {
+    width: 90%;
+    margin: 0.25em auto;
+    }
+    .producto__img {
+    width: 6em;
+    height: 6em;
+    }
+    .producto__nombre {
+    font-size: 0.8em;
+    }
+    .producto__precio {
+    font-size: 0.7em;
+    }
+}

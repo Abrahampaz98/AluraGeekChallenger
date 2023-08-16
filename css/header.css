@@ -1,0 +1,70 @@
+:root{
+    --color-azul:#2A7AE4;
+    --color-azulS:#EAF2FD;
+    --color-blanco:#FFFFFF;
+    --color-gris:#F5F5F5;
+    --color-grisF:#A2A2A2;
+    --tipo-letra:'Raleway';
+    }
+.navegador__add-producto , .navegador__Index{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navegador{
+    padding: 1em;
+    display: flex;
+    gap:5em;
+    align-items: center;
+}
+.search{
+    border: none;
+    color: var(--color-grisF);
+    border-radius: 2em;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-size:1.7em;
+    background-position:right;
+    background-color: var(--color-gris);
+    padding:0.8em;
+    &:active {
+        border: none;
+        background-image: none;
+    }
+    &:focus{
+        border: none;
+        background-image: none;
+    }
+}
+.navegador__boton{
+    padding: 1em 3em;
+    text-align: center;
+    color:var(--color-azul);
+    border:2px solid var(--color-azul);
+    background-color: var(--color-blanco);
+}
+.navegador__boton>a{
+    color:var(--color-azul);
+    text-decoration: none;
+}
+@media screen and (max-width: 860px){
+    .navegador__add-producto, 
+    .navegador__Index {
+    flex-direction: column;
+    }
+    .navegador {
+    flex-direction: column;
+    align-items:center;    
+    gap: 0;
+    }
+    .img__navegador{
+        width: 5em;
+    }
+    .search {
+    margin:0.5em 0;
+    width: 20em;
+    }
+    .navegador__boton {
+    display: none;
+    }
+}

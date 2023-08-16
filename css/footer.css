@@ -1,0 +1,77 @@
+.footer{
+    display: flex;
+    align-items:start;
+    justify-content: space-evenly;
+    padding: 1em;
+    background-color: var(--color-azulS);
+}
+.footer__letras{
+    color: var(--color-grisF);
+}
+.footer__p{
+    padding: 1em 0em;
+}
+.footer__nosotros{
+    text-align:left;
+    display: flex;
+    flex-direction:column;
+}
+.footer__nosotros__titulo{
+    font-size: 1em;
+    font-family:var(--tipo-letra);
+    padding-bottom: 0.8em;
+}
+.footer__nosotros__text{
+    border: none;
+    margin-bottom:1.5em;
+    width:30em;
+    height:5em;
+    &::placeholder{
+        position: relative;
+        bottom:1.3em;
+        text-align:left;
+    }
+}
+.footer__nosotros__nombre{
+    border: none;
+    margin-bottom:1.5em;
+    width:30em;
+    height:3em;
+    &::placeholder{
+        position: relative;
+        bottom:0.5em;
+        text-align:left;
+    }
+}
+.footer__nosotros__boton{
+    border: none;
+    background-color:var(--color-azul);
+    padding: 1em;
+    width: 10em;
+    height: 4em;
+    margin-bottom:5em;
+    color: var(--color-blanco);
+}
+footer{
+    padding: 1.5em 0em;
+    text-align: center;
+}
+@media (max-width: 860px) {
+    .footer {
+    flex-direction: column;
+    align-items: center;
+    }
+    .footer__nosotros {
+    align-items: center;
+    }
+    .footer__nosotros__text,
+    .footer__nosotros__nombre {
+    width: 90%;
+    }
+    .footer__nosotros__boton {
+        margin-bottom: 1em;
+    }
+    footer {
+    padding: 1em 0;
+    }
+}
